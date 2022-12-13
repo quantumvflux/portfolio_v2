@@ -9,12 +9,13 @@ export const Contact = () => {
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
       >
-        <Box width={"50%"} margin={"auto"}>
+        <Box width={"60%"} margin={"auto"}>
           <Heading textAlign={"center"} padding={4}>
             Contact me
           </Heading>
           <Text textAlign={"center"}>
-            Do you want to work with me? I think we can make a great team!
+            Do you want to work with me?
+            <br /> I think we can make a great team!
           </Text>
         </Box>
         <Box width={"50%"} margin={"auto"}>

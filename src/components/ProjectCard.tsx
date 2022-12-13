@@ -1,4 +1,5 @@
 import { Box, Image, Text, Card, CardHeader, Link } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 export const ProjectCard: React.FC<Project> = ({
   title,
@@ -9,6 +10,8 @@ export const ProjectCard: React.FC<Project> = ({
   return (
     <Card>
       <Box
+        as={motion.div}
+        whileHover={{ scale: 1.06 }}
         backgroundColor={"blackAlpha.600"}
         height={72}
         width={64}

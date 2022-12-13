@@ -32,7 +32,7 @@ export const Skills: React.FC<Skill> = ({
         />
       </PopoverTrigger>
       <Portal>
-        <PopoverContent backgroundColor={"purple.300"}>
+        <PopoverContent backgroundColor={"purple.200"}>
           <PopoverArrow />
           <PopoverCloseButton />
           <PopoverHeader>

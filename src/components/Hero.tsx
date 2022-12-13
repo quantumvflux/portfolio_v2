@@ -1,16 +1,10 @@
 import img from "./../assets/photo.png";
 import { motion } from "framer-motion";
+import { Parallax } from "react-scroll-parallax";
 
-import {
-  Box,
-  Text,
-  Heading,
-  Image,
-  Button,
-  AbsoluteCenter,
-} from "@chakra-ui/react";
+import { Box, Text, Heading, Image } from "@chakra-ui/react";
 
-export const Hero = () => {
+export const Hero: React.FC = () => {
   return (
     <Box
       marginInlineStart={0}
@@ -29,16 +23,18 @@ export const Hero = () => {
         opacity={0}
         animate={{ opacity: 1 }}
       >
-        <Heading fontSize={{ base: "7xl", md: "9xl" }} color={"white"}>
-          Marcos Baravalle
-        </Heading>
-        <Text
-          fontWeight={"light"}
-          fontSize={{ base: "5xl", md: "6xl" }}
-          color={"white"}
-        >
-          React Developer
-        </Text>
+        <Parallax translateY={[-30, 30]}>
+          <Heading fontSize={{ base: "7xl", md: "9xl" }} color={"white"}>
+            Marcos Baravalle
+          </Heading>
+          <Text
+            fontWeight={"light"}
+            fontSize={{ base: "5xl", md: "6xl" }}
+            color={"white"}
+          >
+            React Developer
+          </Text>
+        </Parallax>
       </Box>
       <Box>
         <Image
